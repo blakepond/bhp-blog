@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import "../../styles/globals.scss";
+
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
