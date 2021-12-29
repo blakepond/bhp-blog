@@ -9,14 +9,14 @@ import {
   Author,
   Comments,
   CommentsForm,
-  Loader
+  Loader,
 } from "../../components";
 
 const PostDetails = ({ post }) => {
-  const router = useRouter()
+  const router = useRouter();
 
-  if(router.isFallback){
-    return <Loader />
+  if (router.isFallback) {
+    return <Loader />;
   }
 
   return (
@@ -53,10 +53,10 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getPosts()
+  const posts = await getPosts();
 
   return {
-    paths: posts.map(({ node: { slug }}) => ({ params: { slug }})), 
-    fallback: true
-  }
+    paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
+    fallback: true,
+  };
 }

@@ -12,7 +12,7 @@ function Categories() {
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Categories</h3>
+      <h3 className="text-xl text-[#37123c] custom-font mb-8 font-semibold border-b pb-4">Categories</h3>
       {categories.map((category)=> (
           <Link 
           key={category.slug}

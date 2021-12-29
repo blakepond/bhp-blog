@@ -87,7 +87,7 @@ const PostDetail = ({ post }) => {
           <div className="font-medium text-gray-700 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 inline mr-2 text-pink-500"
+              className="h-6 w-6 inline mr-2 text-[#37123c37123c]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -102,7 +102,7 @@ const PostDetail = ({ post }) => {
             <span>{moment(post.createdAt).format("MM DD, YYYY")}</span>
           </div>
         </div>
-        <h1 className="mb-8 text-3xl font0smibold">{post.title}</h1>
+        <h1 className="mb-8 text-6xl font-semibold post-font">{post.title}</h1>
         {post.content.raw.children.map((typeObj, index) => {
           const children = typeObj.children.map((item, itemIndex) =>
             getContentFragment(itemIndex, item.text, item)
