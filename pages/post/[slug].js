@@ -1,6 +1,7 @@
 import React from "react";
 import { getPosts, getPostDetails } from "../../services";
 import { useRouter } from "next/router";
+import "../../../styles/globals.scss";
 
 import {
   PostDetail,
