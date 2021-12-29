@@ -9,6 +9,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Mountain Life</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href='https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Monoton&family=Shrikhand&family=Ubuntu+Mono&display=swap' rel="stylesheet"/>
       </Head>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

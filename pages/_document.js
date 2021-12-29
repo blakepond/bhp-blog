@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import "../../styles/globals.scss";
 
 class MyDocument extends Document {
@@ -12,6 +12,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Monoton&family=Shrikhand&family=Ubuntu+Mono&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
